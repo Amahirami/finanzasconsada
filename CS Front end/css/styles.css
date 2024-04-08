@@ -126,30 +126,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Para mantener el formulario centrado verticalmente en la página */
+  min-height: 100vh; 
   background-color: #96B2AE; 
 }
-
-/* Estilo para el tamaño del checkbox */
-.form-check-input {
-  width: auto; /* Permite que el ancho se ajuste automáticamente al contenido */
-  margin-right: 5px; /* Espacio a la derecha del checkbox */
-  background-color: #96B2AE; 
-}
-
-/* Estilo para la etiqueta del checkbox */
-.form-check-label {
-  margin-bottom: 0; /* Eliminar el margen inferior para alinear verticalmente */
-  background-color: #96B2AE; 
-}
-
 
 .form-container input,
 .form-container button {
   margin-bottom: 10px;
   display: block;
   width: 100%; 
-  max-width: 700px; /* Establecemos un ancho máximo para evitar que el formulario se extienda demasiado en pantallas grandes */
+  max-width: 700px; 
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -164,9 +150,6 @@ body {
 .form-container button:hover {
   background-color: #98CBB0;
 }
-
-
-
 
 
 hr {
