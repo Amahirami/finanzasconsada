@@ -100,6 +100,7 @@
   }
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -122,16 +123,33 @@ body {
 
 /* Formulario */
 .form-container {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para mantener el formulario centrado verticalmente en la página */
+  background-color: #96B2AE; 
 }
+
+/* Estilo para el tamaño del checkbox */
+.form-check-input {
+  width: auto; /* Permite que el ancho se ajuste automáticamente al contenido */
+  margin-right: 5px; /* Espacio a la derecha del checkbox */
+  background-color: #96B2AE; 
+}
+
+/* Estilo para la etiqueta del checkbox */
+.form-check-label {
+  margin-bottom: 0; /* Eliminar el margen inferior para alinear verticalmente */
+  background-color: #96B2AE; 
+}
+
 
 .form-container input,
 .form-container button {
   margin-bottom: 10px;
   display: block;
-  width: 90%; 
-  max-width: 500px; /* Establecemos un ancho máximo para evitar que el formulario se extienda demasiado en pantallas grandes */
+  width: 100%; 
+  max-width: 700px; /* Establecemos un ancho máximo para evitar que el formulario se extienda demasiado en pantallas grandes */
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -146,6 +164,11 @@ body {
 .form-container button:hover {
   background-color: #98CBB0;
 }
+
+
+
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -927,6 +950,7 @@ progress {
 .g-5,
 .gx-5 {
   --bs-gutter-x: 3rem;
+ 
 }
 
 .g-5,
@@ -2242,11 +2266,17 @@ textarea.form-control-lg {
   border-radius: 0.5rem;
 }
 
+/*Botón*/
 .form-check {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   min-height: 1.5rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
+  background-color: #96B2AE; 
+
 }
 .form-check .form-check-input {
   float: left;
@@ -3780,14 +3810,14 @@ textarea.form-control-lg {
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
-  --bs-navbar-toggler-padding-y: 0.25rem;
+  /*--bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
-  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;*/
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4283,6 +4313,7 @@ textarea.form-control-lg {
   background-color: var(--bs-card-cap-bg);
   border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
+
 .card-footer:last-child {
   border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
@@ -7626,6 +7657,7 @@ textarea.form-control-lg {
 .my-5 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+
 }
 
 .my-auto {
