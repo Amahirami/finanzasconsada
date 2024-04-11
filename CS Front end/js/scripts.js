@@ -1,7 +1,7 @@
 
-document.getElementById("miFormulario").addEventListener("submit", function(event) {
-
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        event.preventDefault();
 
     // Obtener los valores de los campos
     var nombre = document.getElementById("nombre").value.trim();
@@ -39,7 +39,7 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
 
     // Si todos los campos son válidos,enviar el formulario
   
-    alert("Registro realizado con éxito. ¡Te contactaremos en breve!");
-
+     alert("Registro realizado con éxito. ¡Te contactaremos en breve!");
+    });
 
 });
